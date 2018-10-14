@@ -17,21 +17,25 @@
 	
 		$count_couple = strlen($data) / 2; // count couple
 		
-		// clean all couple
-		for ($i=0;$i <= $count_couple;$i++)
+		if ( strlen($data) % 2 === 0 ? true : false) // parity check
 		{
-			$data = str_replace( ['()', '[]', '{}'], '', $data);
+			// clean all couple
+			for ($i=0;$i <= $count_couple;$i++)
+			{
+				$data = str_replace( ['()', '[]', '{}'], '', $data);
+			}
+			
+			//check if !empty -> bad
+			if (!empty($data))
+			{
+				$status = 'Не верно';
+			} 
+			else {$status = 'Верно';}
 		}
+		else $status = 'Не верно';
 		
-		
-		//check if !empty -> bad
-		if (!empty($data))
-		{
-			$status = 'Не верно';
-		} 
-		else {$status = 'Верно';}
-	
 		echo $status."<br>\r\n"; // result
+		
 	}
 	?>
 </body>
