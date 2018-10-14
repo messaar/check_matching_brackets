@@ -5,7 +5,7 @@
 </head>
 <body>
 	<form method="post">
-		<input type="test" name="data" placeholder="Введите арефмитическое выражение" style="width:250px">
+		<input type="test" name="data" placeholder="Введите арифметическое выражение" style="width:250px">
 		<input type="submit" value="Проверить">
 	</form>
 	
