@@ -11,3 +11,11 @@ Check brackets balance by PHP
 
 
 Демо: http://test2.agronomik.in.ua/
+
+
+_______________________________________________________________________________________________________
+A program that checks the correctness of the balance of brackets in an arithmetic expression, i.e. that the brackets are set correctly and correctly their entry, that is, if the brackets are so located [({})], then this is the correct entry, but [([) is incorrect.
+
+Input Parameter - String - an arithmetic expression; The output parameter is "True"; "Not true". You cannot use built-in methods.
+
+Demo: http://test2.agronomik.in.ua/
