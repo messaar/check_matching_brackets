@@ -15,11 +15,11 @@
 		$data = $_POST['data'];
 		$data = preg_replace('/[^\(\)\[\]\{\}]/', '', $data); //deldete symbols but not ()[]{}
 	
-		$count_pars = strlen($data) / 2; // count pars
+		$count_couple = strlen($data) / 2; // count couple
 		
-		// clean all pars
+		// clean all couple
 		$i = 1;
-		while ($i <= $count_pars)
+		while ($i <= $count_couple)
 		{
 			$data = str_replace( ['()', '[]', '{}'], '', $data);
 			$i++;
