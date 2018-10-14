@@ -18,11 +18,9 @@
 		$count_couple = strlen($data) / 2; // count couple
 		
 		// clean all couple
-		$i = 1;
-		while ($i <= $count_couple)
+		for ($i=0;$i <= $count_couple;$i++)
 		{
 			$data = str_replace( ['()', '[]', '{}'], '', $data);
-			$i++;
 		}
 		
 		
